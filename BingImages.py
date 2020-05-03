@@ -37,6 +37,9 @@ def downloadImage(url, save_dir, title):
 
 
 def main(images_number=15, save_dir="", cover=False):
+    # images_number:下载的图片数量，最多为15
+    # save_dir: 图片保存的完整文件夹路径
+    # cover: 是否删除文件夹中原有的文件
     respons = requests.get(API % (0, 7))
     images = getImageInfo(respons.json())
     respons = requests.get(API % (7, 8))
