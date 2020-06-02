@@ -18,7 +18,7 @@ if not os.path.exists(folder_name):
 
 
 def download(url):
-    # 定义线程中的下载函数
+    # 定义线程中的下载函数，略过已下载文件
     file_name = url.split("/")[-1]
     file_name = os.path.join(folder_name, file_name)
     if os.path.exists(file_name):
