@@ -4,7 +4,7 @@ import os
 
 # 线程池的最大线程数
 max_workers = 10
-# m3u8的url链接
+# m3u8的url链接，建议不要用https
 url = ""
 base_url = url[:-5]
 folder_name = url.split("/")[-1].split(".")[0]
